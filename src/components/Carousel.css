@@ -1,0 +1,50 @@
+.image {
+  position: relative;
+  height: calc(100vh - 4rem);
+  width: calc(100vw - 4rem);
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+}
+
+.imageBox {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.imageBox.displayed {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.LeftButton {
+  cursor: pointer;
+  position: absolute;
+  top: 50vh;
+  left: 3rem;
+}
+
+.RightButton {
+  cursor: pointer;
+  position: absolute;
+  top: 50vh;
+  right: 3rem;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 3rem;
+}
+
+.dot {
+  cursor: pointer;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
